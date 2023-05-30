@@ -8,10 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class DropdownPage {
-	private WebDriver driver;
-
+	
 	public DropdownPage(WebDriver driver) {
-		this.driver = driver;
+
 		PageFactory.initElements(driver, this);
 	}
 

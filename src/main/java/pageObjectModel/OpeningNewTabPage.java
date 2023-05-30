@@ -26,7 +26,7 @@ public class OpeningNewTabPage {
 		linkField.click();
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> itr = windows.iterator();
-		String parentWindow = itr.next();
+		itr.next();
 		String childWindow = itr.next();
 		driver.switchTo().window(childWindow);
 		return newTabMsg.getText();		

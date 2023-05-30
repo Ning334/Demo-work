@@ -58,6 +58,12 @@ public class HomePage{
 	
 	@FindBy(how = How.LINK_TEXT, using = "Notification Messages")
 	private WebElement notificationMessage;
+	
+	@FindBy(how = How.LINK_TEXT, using = "Disappearing Elements")
+	private WebElement disappearingElem;
+	
+	@FindBy(how = How.LINK_TEXT, using = "Sortable Data Tables")
+	private WebElement dataTable;
 
 
 	public HomePage(WebDriver driver) {
@@ -150,6 +156,16 @@ public class HomePage{
 	public NotificationMessagePage clickNotification() {
 		notificationMessage.click();
 		return new NotificationMessagePage(driver);
+	}
+	
+	public DisappearingElementPage clickDisappearElem() {
+		disappearingElem.click();
+		return new DisappearingElementPage(driver);
+	}
+	
+	public DataTablePage clickDataTable() {
+		dataTable.click();
+		return new DataTablePage(driver);
 	}
 	
 

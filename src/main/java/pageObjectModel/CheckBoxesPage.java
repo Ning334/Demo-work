@@ -6,10 +6,9 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class CheckBoxesPage {
-	private WebDriver driver;
 
 	public CheckBoxesPage(WebDriver driver) {
-		this.driver = driver;
+
 		PageFactory.initElements(driver, this);
 	}
 

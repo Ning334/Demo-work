@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.FileUploadTest">
+      <class name="testCases.DataTableTest">
         <methods>
-          <include name="fileUpload"/>
+          <include name="findMatchingValue"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.FileUploadTest -->
+      </class> <!-- testCases.DataTableTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
